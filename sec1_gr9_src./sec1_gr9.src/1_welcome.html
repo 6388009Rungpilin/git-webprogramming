@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+            
+            body{
+                background-image: url(pic_src/Wallpaper.jpg);
+                background-position: 100% 0;
+                background-blend-mode: overlay;  
+            }
+            .about{ 
+                color: white;
+                padding-right: 20px;
+            }
+            .about:hover{
+                opacity: 0.8;
+            }
+            .container { /*the whole container for text at the middle*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 100px;
+                padding-bottom: 200px;
+            }
+            .text{
+                padding: 20px;
+                color: #ffa9dd;
+                text-align: center;
+            }
+            .quote{
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            .quote-name{
+                font-size: 100px;
+            }
+            .button{ /*both home page & login page button*/
+                background-color: #e4008a;
+                color: white;
+                margin: 20px;
+                border-radius: 30px;
+                padding: 15px 20px;
+                text-decoration: none;
+                font-size: 30px;
+            }
+            .button:hover{
+                opacity: 0.8;
+            }
+            .regis{
+                color: white;
+                padding: 10px;
+                padding-top: 30px;
+                padding-left: 20px;
+                text-decoration: underline;
+            }
+
+        </style>
+
+        <title> TBSP - Tablespoon</title>
+        <link rel="stylesheet" href="/css/webcomponent.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <header>
+            <nav id="top"> <!--the whole head bar-->
+                <div class="top-left">
+                    <a href="/home" class="name">Tablespoon</a> <!--Tablespoon's logo at the left side of the bar-->
+                </div>
+                <div class="top-right"> <!--direct button to the AboutUs page & login page-->
+                    <a href="/aboutus" class="about"><b class="bi-people-fill"> AboutUs</b></a>
+                    <a href="/login" class="log"><b class="bi-person-circle"> Account </b></a>
+                </div>
+            </nav>  
+        </header>
+        
+        <article>
+            <div class="container"> <!--cantainer for the text at the middle of the page-->
+
+                <div class="text">
+                    <div class="quote">
+                        <h1 class="hi">Open your Music Experience at 
+                            <div class="quote-name">Tablespoon</div>
+                        </h1>
+                    </div>
+        
+                    <a href="/home" class="button home">HomePage</a> <!--to homepage button-->
+                    <a href="/login" class="button log">Login</a> <!--to login page button-->
+            
+                    <div class="regis"> <!--to Register page for people who don't have their account yet-->
+                        <a href="/regis" class="regis">Don't have account? Register here!!</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </body>
+
+    <footer>
+        <div class="footer"> <!--footer contact-->
+            <div class="name"> Tablespoon </div> 
+            <div class="contact"> <!--contacts beside the logo name-->
+              <b class="bi-flag-fill"> Based on Thailand </b><br>
+              <b class="bi-telephone-fill"> Tel : 029889898</b><br>
+              <b class="bi-envelope-fill"> Email : tablespoon@support.com </b>
+            </div>
+          </div>
+    </footer>
+    
+</html>

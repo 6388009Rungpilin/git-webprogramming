@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <style>
+      
+      #box 
+      {
+        width: 100%;
+        height: 500px;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        color: white;
+        text-align: center;
+
+      }
+    #box>.btn{
+        font-size: large;
+        font-weight: bold;  
+        padding: 5px;  
+        border-radius: 10px;
+    }
+
+      #header{
+        color:rgb(247, 3, 125);
+        text-align: center;
+      }
+      label 
+      { 
+        color:white;
+        font-size: xx-large ;
+      }   
+
+      #innerbox 
+      {
+        margin: auto;
+        padding: 50px;
+        border-color: white;
+        border-style: solid;
+        border-radius: 25px;
+      }
+      #registerHeader{
+        padding: 50px;
+      }
+      #regis
+      {
+        background-color: plum;
+        border-color: plum;    
+      }
+    </style>
+
+    <title>Registration Done!</title>
+    <link rel="stylesheet" href="/css/webcomponent.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+  </head>
+
+  <body>
+
+    <header id="top"> <!--the whole head bar-->
+      <div class="top-left">
+        <a href="/home" class="name">Tablespoon</a>
+      </div>
+      <div class="top-right">
+        <a href="/login" class="log"><b class="bi-person-circle"> Account</b></a>
+      </div>
+    </header>
+    <nav class="navbar"> <!--the whole navigation bar-->
+      <a href="/home" class="home"><b class="bi-house-door-fill"> Home</b></a>
+      <a href="/search" class="search"><b class="bi-search"> Search</b></a>
+      <a href="/aboutus" class="about"><b class="bi-people-fill"> AboutUs</b></a>
+    </nav>
+
+      <div id='box' class="container">
+          <h1>REGISTER SUCCESSED</h1><br> <!-- Text -->
+          <button onclick="location.href='/login';" type="button" class="btn btn-light font-weight-bold ">Go back to login page</button> <!-- click for go back to login page to login after register successed -->
+      </div>
+
+    <footer>
+        <div class="footer">
+            <div class="name"> Tablespoon </div>
+             <div class="contact">
+                <b class="bi-flag-fill"> Based on Thailand </b><br>
+                <b class="bi-telephone-fill"> Tel : 029889898</b><br>
+                <b class="bi-envelope-fill"> Email : tablespoon@support.com </b>
+            </div>
+            </div> 
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

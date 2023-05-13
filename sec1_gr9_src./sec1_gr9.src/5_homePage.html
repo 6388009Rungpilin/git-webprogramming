@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <style>
+        
+        .body{
+          margin-bottom: 50px;
+        }
+        .sidebar{
+          color: #191919;
+          background-color: #ffc6e8;
+          width: 20%;
+          min-height: 1500px;
+          top: 10;
+          line-height: 3;
+          margin-right: 30px;
+          padding-left: 20px;
+
+          display: flex;
+          flex-direction: column;
+          float: left;
+        
+        }
+        dt:hover, dd>b:hover{ /*each text at the side bar when mouse is over*/
+          text-shadow: 1px 1px 15px grey
+        }
+        #the1975{ /*reccommend album picture's*/
+          width: 200px;
+          padding: 10px;
+          padding-left: 20px;
+          padding-right: 30px;
+        }
+        .rec{ /*reccommend album container*/
+          margin-top: 30px;
+          margin-bottom: 20px;
+          margin-left: 30%;
+          border-radius: 30px;
+          padding: 20px;
+          background-color: #303030;
+          max-width: 800px;
+          display: flex;
+        }
+        .rec:hover{
+          background-color: #30303089;
+        }
+        .album-body{
+          color: white;
+          line-height: 1.5;
+        }
+        .album-title{
+          font-size: 35px;
+        }
+        #play{ /*play button in the reccommend album*/
+          color: #e4008a;
+          line-height: 0;
+          font-size: 60px;
+          text-align: right;
+        }
+        .lists{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .pl{ /*pattern for all reccommend playlists*/
+          background-color: #303030;
+          width: 200px;
+          height: 200px;
+          border-radius: 25px;
+          margin: 20px;
+          padding-top: 30px;
+        }
+        .pl:hover{
+          background-color: #30303089;
+        }
+        .pl-pic{
+          width: 150px;
+          height: 150px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .pl>figcaption{
+          text-align: center;
+          color: white;
+          font-weight: bold;
+        }
+        .pl>.bi-plus{
+          line-height: 0px;
+          font-size: 150px;
+          text-align: center;
+        }
+        .name,.contact{
+          padding-bottom: 100px;
+        }
+        .playing{ /*playing bar*/
+          position: fixed;
+          bottom: 0;
+          height: 100px;
+          width: 100%;
+          padding: 10px;
+
+          background-color: #191919;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .playing-song-name{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .playing-song-name>h2{
+          color: white;
+        }
+        #audio-player-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .icons{
+          font-size: 30px;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .icons>i:hover{
+          text-shadow: 1px 1px 15px #fff
+        }
+        
+      </style>
+
+      <title>HomePage : Tablespoon</title>
+      <link rel="stylesheet" href="/css/webcomponent.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+      <header id="top"> <!--the whole head bar-->
+        <div class="top-left">
+          <a href="/home" class="name">Tablespoon</a>
+        </div>
+        <div class="top-right">
+          <a href="/logout" class="logout">log out</a>
+          <a href="/login" class="login"><b class="bi-person-circle"> Account</b></a>
+        </div>
+      </header>
+      <nav class="navbar"> <!--the whole navigation bar-->
+        <a href="/home" class="home"><b class="bi-house-door-fill"> Home</b></a>
+        <a href="/search" class="search"><b class="bi-search"> Search</b></a>
+        <a href="/aboutus" class="about"><b class="bi-people-fill"> AboutUs</b></a>
+      </nav>
+    
+    <article class="sidebar"> <!--side bar section-->
+        <dl>
+            <dt> &nbsp <b class="bi-plus">New Playlist</b></dt>
+            <dd><b class="bi-heart-fill"> Liked Songs</b></dd>
+            <dd><b class="bi-headphones"> Thai </b></dd>
+            <dd><b class="bi-headphones"> Eng </b></dd>
+            <dd><b class="bi-headphones"> K-pop </b></dd>
+            <dd><b class="bi-headphones"> Dancing </b></dd>
+            <dd><b class="bi-headphones"> Bed Time </b></dd>
+        </dl>
+    </article>
+
+    <article class="rec"> <!--the reccommend album at the top of the body of the page-->
+        <div class="rec-album-cover">
+          <img src="pic_src/the1975.jpg.webp" id="the1975"> <!--the album cover picture-->
+        </div>
+        <div class="album-body"> <!--album body : title, detail, playbutton-->
+          <br>
+          <div class="album-title">A Brief Inquiry Into Online Relationships</div><br>
+          <div class="album-text">released album from The 1975 suggestion for you</div>
+          <div id="play"><i class="bi-play-circle-fill"></i></div>
+        </div>
+    </article>
+
+    <article class="playlists"> <!--all of the reccommend playlists-->
+
+        <div class="section"> <!--Section divided for "Made for you"-->
+          <h1 id="made4u"> Made For You </h1> 
+          <div class="lists">
+            <figure class="pl"> <!-- divide all playlists into class pl-->
+              <img src="pic_src/Fresh&Chill.png" class="pl-pic"><br> <!--each pl contain image(plalist cover)-->
+              <figcaption> Fresh & Chill</figcaption> <!--and the playlist's name-->
+            </figure>
+            <figure class="pl">
+              <img src="pic_src/MegaHitMix.jpg" class="pl-pic"><br>
+              <figcaption> Mega Hit Mix</figcaption>
+            </figure>
+            <figure class="pl">
+              <img src="pic_src/Hits&viral.jpg" class="pl-pic"><br>
+              <figcaption> Hits & Viral</figcaption>
+            </figure>
+            <figure class="pl">
+             <img src="pic_src/popSauce.jpg" class="pl-pic"><br>
+              <figcaption> Pop Sauce </figcaption>
+            </figure>
+            <figure class="pl">
+              <img src="pic_src/hiphop.png" class="pl-pic"><br>
+              <figcaption> Hip Hop</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="section"> <!--Section divided for "My playlists"-->
+          <h1 id="my-playlists"> My Playlists </h1>
+          <div class="lists">
+
+            <figure class="pl">
+              <img src="pic_src/thai.jpg" class="pl-pic"><br>
+              <figcaption> Thai</figcaption>
+            </figure>
+            <figure class="pl">
+              <img src="pic_src/eng.jpg" class="pl-pic"><br>
+              <figcaption> Eng </figcaption>
+            </figure>
+            <figure class="pl">
+              <img src="pic_src/kpop.jpg" class="pl-pic"><br>
+              <figcaption> K-pop </figcaption>
+            </figure>
+            <figure class="pl">
+             <img src="pic_src/bedtime.jpg" class="pl-pic"><br>
+              <figcaption> BedTime </figcaption>
+            </figure>
+            <figure class="pl"> <!--slot for user to press create new playlist-->
+              <img src="https://icon-library.com/images/256-256-46376b06c8dce24928e85a79437706a2_98262.png" class="pl-pic"><br>
+              <figcaption> New Playlist </figcaption>
+            </figure>
+    
+          </div>
+        </div>
+
+    </article>
+
+    <footer>
+      <div class="footer"> <!--footer contact-->
+        <div class="name"> Tablespoon </div>
+          <div class="contact"> <!--contacts beside the logo name-->
+            <b class="bi-flag-fill"> Based on Thailand </b><br>
+            <b class="bi-telephone-fill"> Tel : 029889898</b><br>
+            <b class="bi-envelope-fill"> Email : tablespoon@support.com </b>
+          </div>
+        </div>
+      </div>
+
+      <div class="playing"> <!--the playing bar which always display at the bottom of the home page-->
+        <img src="pic_src/playBar.jpg" class="playing-song-img"> <!--song image that currrently played-->
+          <figcaption class="playing-song-name">
+            <h2><b>Someday</b></h2> <!--playing song name-->
+            ADOY
+          </figcaption>
+        <div id="audio-player-container"> <!--the div section of play container-->
+          <div class="icons">
+            <i class="bi-skip-backward-fill"></i> <!--skip backward button-->
+            <i class="bi-play-fill"></i> <!--play button-->
+            <i class="bi-skip-forward-fill"></i> <!--skip forward button-->
+          </div>
+          <div class="slider"><br> <!--the slider bar-->
+            <span id="current-time" class="time">0:00</span>
+            <input type="range" id="seek-slider" max="100" value="0">
+            <span id="duration" class="time">3:25</span>
+          </div>
+        </div>
+    </footer>
+  </body>
+
+    
+</html>

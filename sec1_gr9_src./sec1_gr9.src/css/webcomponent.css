@@ -1,0 +1,79 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100px;
+    margin: 0px;
+}
+body{
+    background-color: #191919;
+    color: #e4008a;
+    
+}
+#top{
+    border-top: 0px;
+    background-color: #191919;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+.top-left>a{
+    color: #e4008a;
+}
+.top-left>a:hover,.top-right>a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+a{
+    color: #e4008a;
+    text-decoration: none;
+}
+.navbar{
+    background-color: #e4008a;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+nav>a{
+    color: #202020;
+    background-color: #e4008a;
+}
+nav>a:hover{
+    color: #202020;
+    text-decoration: none;
+    text-shadow: 1px 1px 15px #fff
+}
+.logout{
+    padding-right: 5px;
+}
+.login{
+    background-color: #e4008a;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+.log:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer{
+    background-color: #191919;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact{
+    color: white;
+    line-height: 2;
+}
